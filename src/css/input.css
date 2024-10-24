@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply px-5 mx-auto;
+  }
+  .navbar-link {
+    @apply text-[17px] text-[#212832];
+  }
+  .element-center {
+    @apply flex items-center justify-center;
+  }
+
+  .justify-elements-between {
+    @apply flex items-center justify-between;
+  }
+
+  .common-paragraph {
+    @apply text-text text-[16px] font-[400];
+  }
+  .common-paragraph-2 {
+    @apply text-text text-[18px] font-[400];
+  }
+
+  .section-heading {
+    @apply text-center mb-12 relative;
+  }
+
+  .section-title {
+    @apply font-volkhovFont font-[700] text-[30px] md:text-[50px] text-secondary;
+  }
+  .section-category {
+    @apply text-[16px] md:text-[18px] font-[600] text-text mb-3;
+  }
+
+  /* Hero Section */
+  .hero {
+    @apply min-h-[100vh] relative overflow-x-hidden;
+  }
+
+  .hero-decore-1 {
+    @apply absolute top-[-25px] right-[-100px] z-0;
+  }
+
+  .nav-links {
+    @apply element-center gap-16 font-navbarFont fixed right-[-100%] top-[-47px] bg-[#fff] h-[calc(100vh_+_47px)] w-[80%] shadow-2xl flex-col mt-[47px] z-[100] transition-all ease-linear duration-800 lg:static lg:bg-inherit lg:h-[0px] lg:w-auto lg:flex-row lg:shadow-none lg:mt-0;
+  }
+
+  .nav-links.active {
+    @apply right-0;
+  }
+
+  .sign-up-btn {
+    @apply navbar-link border border-[#212832] px-5 py-2 rounded-[5px];
+  }
+
+  .close-menu {
+    @apply lg:hidden absolute left-[20px] top-[20px] w-[30px] h-[30px] element-center rounded-full bg-primary;
+  }
+
+  /* Top Services Style */
+
+  .best-services-cards-style {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 place-items-center;
+  }
+
+  .best-services-card-style {
+    @apply w-[267px] h-[314px] rounded-[36px] bg-[#fff] flex flex-col items-center justify-center text-center p-12 pt-0 shadow-md;
+  }
+
+  .best-services-card-decore {
+    @apply w-[100px] h-[100px] rounded-tl-[30px] rounded-br-[10px] bg-primary absolute bottom-[-35px] left-[-35px] z-[-1];
+  }
+
+  .best-services-unfocused-card-style {
+    @apply w-[190px] h-[229px] flex flex-col items-center justify-center text-center;
+  }
+
+  .best-services-card-title {
+    @apply text-[#1E1D4C] text-[20px] font-[600] font-openSansFont mb-5;
+  }
+
+  /* Top Destinations Style*/
+  .top-destination-cards-style {
+    @apply flex items-center justify-center gap-10 flex-wrap;
+  }
+
+  .top-destination-card-style {
+    @apply w-[314px] h-[457px] rounded-[24px] shadow-md bg-white;
+  }
+
+  .top-destination-img {
+    @apply h-[325px] w-full object-none object-top rounded-tl-[24px] rounded-tr-[24px];
+  }
+
+  .top-destination-days-trip {
+    @apply flex items-center justify-items-start gap-3 mt-4;
+  }
+
+  /* Next Trip */
+  .next-trip-common-heading {
+    @apply font-[700] text-[16px] text-text mb-2;
+  }
+
+  .next-trip-img-container {
+    @apply relative min-w-[48px] min-h-[48px] w-[48px] h-[48px] rounded-[13px] element-center;
+  }
+
+  .next-trip-card-style {
+    @apply w-full sm:w-[370px] bg-[#fff] shadow-md rounded-[26px] p-7 relative;
+  }
+
+  .next-trip-card-img {
+    @apply h-[160px] w-full object-cover rounded-[24px] mb-5;
+  }
+
+  .next-trip-card-icon-container {
+    @apply w-[36px] h-[36px] bg-[#F5F5F5] rounded-full element-center;
+  }
+
+  .next-trip-card-badge-style {
+    @apply absolute right-0 sm:right-[-110px] bottom-[50px] bg-[#FFFFFF] shadow-md w-[265px] p-5 rounded-[18px];
+  }
+
+  .next-trip-card-badge-bar-style {
+    @apply relative w-[155px] h-[5px] bg-[#F5F5F5] rounded-[30px] mt-2;
+  }
+
+  .next-trip-card-badge-bar-completed-style {
+    @apply absolute top-0 left-0 w-[40%] h-[5px] bg-[#8A79DF] rounded-[30px];
+  }
+
+  /* Subscribe Section */
+
+  .subscribe-content {
+    @apply w-full bg-[rgba(223,215,249,.3)] py-10 px-10 sm:px-20 lg:py-20 lg:px-32 rounded-tr-[20px] rounded-tl-[130px] rounded-b-[20px] relative overflow-hidden;
+  }
+
+  .subscribe-heading {
+    @apply text-[#5E6282] text-[20px] lg:text-[33px] font-[600] text-center mb-10 lg:mb-20;
+  }
+
+  .subscribe-btn {
+    @apply w-full md:w-[180px] h-[70px] bg-gradient-to-b from-[#FF946D] to-[#FF7D68] text-white font-[500] text-[17px] rounded-[10px];
+  }
+
+  .subscribe-form {
+    @apply mx-auto element-center gap-5 md:flex-row flex-col;
+  }
+
+  .input-with-icon {
+    @apply py-3 pl-14 pr-5 rounded-lg border-none outline-none text-base text-gray-900 bg-white placeholder-[#39425D] text-[14px] w-full md:w-[420px] h-[70px];
+    background-image: url("../imgs/Subscription/mail.svg");
+    background-position: 20px center;
+    background-repeat: no-repeat;
+  }
+
+  .subscribe-decore-1 {
+    @apply absolute right-0 top-0 z-[-1];
+  }
+
+  .subscribe-decore-2 {
+    @apply absolute left-[-90px] bottom-0 z-[-1];
+  }
+
+  .subscribe-decore-3 {
+    @apply absolute right-[-20px] top-[-20px] z-[1];
+  }
+
+  .subscribe-decore-4 {
+    @apply absolute bottom-[-75px] right-[30px] z-[-10];
+  }
+
+  /* Footer */
+  .footer-title {
+    @apply text-[21px] text-[#080809] font-[700];
+  }
+
+  .footer-parent-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 sm:gap-10 gap-y-10;
+  }
+
+  .footer-child-grid {
+    @apply col-span-3 lg:mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-28;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "googleSans"; /* The name you want to use */
+  src: url("../google-sans/ProductSans-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal; /* Normal style */
+}
