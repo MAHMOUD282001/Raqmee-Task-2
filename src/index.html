@@ -12,11 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <section class="hero">
@@ -43,14 +38,10 @@
               </li>
               <li><a href="#" class="navbar-link">Login</a></li>
               <li>
-                <a
-                  href="#"
-                  class="sign-up-btn"
-                  >Sign up</a
-                >
+                <a href="#" class="sign-up-btn">Sign up</a>
               </li>
               <li><a href="#" class="navbar-link">En</a></li>
-              
+
               <div class="close-menu">
                 <i
                   class="fa-solid fa-close text-[#fff] cursor-pointer text-[20px]"
@@ -67,26 +58,18 @@
         </div>
       </header>
 
-      <div
-        class="container flex items-center lg:justify-between justify-center flex-col lg:flex-row relative z-10 mt-10"
-      >
-        <div class="hero-left flex flex-col justify-center w-full lg:w-[50%]">
-          <p
-            class="text-primary uppercase font-[700] text-[20px] font-poppinsFont"
-          >
-            Best Destinations around the world
-          </p>
+      <div class="container hero-container">
+        <div class="hero-left">
+          <p class="hero-top-text">Best Destinations around the world</p>
 
-          <h1
-            class="2xl:text-[84px] xl:text-[70px] lg:text-[50px] md:text-[84px] sm:text-[50px] text-[30px] 2xl:leading-[89px] xl:leading-[75px] lg:leading-[55px] md:leading-[89px] sm:leading-[55px] leading-[35px] font-[700] font-volkhovFont my-8 text-[#181E4B]"
-          >
+          <h1 class="hero-main-text">
             Travel,
             <span class="relative">
               <span class="relative z-[3]">enjoy</span>
               <img
                 src="./imgs/Hero/Decore (1).png"
                 alt="Text Decoration"
-                class="absolute 2xl:left-[-33px] xl:left-[-25px] lg:left-[-20px] md:left-[-33px] sm:left-[-20px] left-[-10px] 2xl:bottom-[15px] xl:bottom-[13px] lg:bottom-[10px] md:bottom-[15px] sm:bottom-[10px] bottom-[5px] 2xl:max-w-[400px] xl:max-w-[300px] lg:max-w-[200px] md:max-w-[400px] sm:max-w-[200px] max-w-[150px] z-[1]"
+                class="hero-text-underline"
             /></span>
             <br />
             and live a new <br />
@@ -98,17 +81,11 @@
             Preferred to sportsmen it engrossed listening. Park gate<br />
             sell they west hard for the.
           </p>
-          <div class="mt-8 flex items-center flex-col sm:flex-row gap-10">
-            <button
-              class="w-[170px] h-[60px] bg-[#F1A501] text-white font-[500] text-[18px] rounded-[10px]"
-            >
-              Find out more
-            </button>
+          <div class="btns-conainer">
+            <button class="hero-btn">Find out more</button>
 
             <div class="flex items-center gap-5">
-              <div
-                class="w-[52px] h-[52px] bg-primary rounded-full element-center"
-              >
+              <div class="play-btn">
                 <i class="fa-solid fa-play text-[#fff]"></i>
               </div>
 
@@ -116,28 +93,24 @@
             </div>
           </div>
         </div>
-        <div class="hero-right w-full lg:w-[50%] lg:mt-0 mt-7">
+        <div class="hero-right">
           <div class="relative">
             <div class="z-[2] relative">
               <img src="./imgs/Hero/Traveller 1.png" alt="Traveller" />
             </div>
-            <div
-              class="absolute 2xl:right-0 xl:right-[-20px] lg:right-[-50px] md:right-0 sm:right-[-50px] right-[0] sm:top-[120px] top-0 z-[1]"
-            >
+            <div class="hero-first-plane">
               <img
-                src="./imgs/Hero/plane 1.png"
+                src="./imgs/Hero/plane.svg"
                 alt="Plane"
-                class="sm:w-[138px] sm:h-[95px] w-[100px] h-[50px] object-contain"
+                class="plane-style"
               />
             </div>
 
-            <div
-              class="absolute top-[0] left-0 sm:left-[130px] sm:top-[50px] z-[1]"
-            >
+            <div class="hero-second-plane">
               <img
-                src="./imgs/Hero/plane 2.png"
+                src="./imgs/Hero/plane.svg"
                 alt="Plane"
-                class="sm:w-[138px] sm:h-[95px] w-[100px] h-[50px] object-contain"
+                class="plane-style"
               />
             </div>
           </div>
@@ -145,7 +118,7 @@
       </div>
     </section>
 
-    <section class="best-services my-24 relative">
+    <section class="best-services my-32 relative">
       <div class="container z-[1]">
         <div class="section-heading">
           <div class="z-[1] relative">
@@ -223,7 +196,7 @@
       </div>
     </section>
 
-    <section class="top-destinations my-24">
+    <section class="top-destinations my-32">
       <div class="container">
         <div class="section-heading">
           <div>
@@ -306,9 +279,7 @@
               </div>
             </div>
 
-            <div
-              class="hidden sm:block absolute bottom-[20px] right-[-60px] z-[-1]"
-            >
+            <div class="top-destination-card-decoration">
               <img src="./imgs/Top Destinations/Decore.png" alt="Decore Img" />
             </div>
           </div>
@@ -481,7 +452,7 @@
     </section>
 
     <section class="testimonials my-24">
-      <div class="container justify-elements-between flex-wrap lg:gap-0 gap-10">
+      <div class="tesyimonials-container">
         <div class="w-full lg:w-[45%] xl:w-[40%]">
           <div class="section-heading text-left mb-7">
             <div class="relative">
@@ -492,24 +463,70 @@
             </div>
           </div>
         </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+        <div class="w-full lg:w-[50%] xl:w-[55%]">
+          <div class="relative h-auto overflow-hidden p-[30px] sm:p-[60px]">
+            <div id="sliderWrapper" class="slider-wrapper">
+              <div class="slider-card testimonials-card-1 active">
+                <p class="common-paragraph">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+
+                <div class="mt-5 sm:mt-10">
+                  <p class="common-paragraph-2 font-[600]">Mike Taylor</p>
+                  <p class="common-paragraph text-[14px] mt-1">
+                    Lahore, Pakistan
+                  </p>
+                </div>
+
+                <div
+                  class="absolute w-[30px] sm:w-auto left-[-17px] top-[-17px] sm:left-[-34px] sm:top-[-34px]"
+                >
+                  <img
+                    src="./imgs/Testimonials/Image.svg"
+                    alt="Testimonials Image"
+                  />
+                </div>
+              </div>
+              <div class="slider-card testimonials-card-2">
+                <p class="common-paragraph">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+
+                <div class="mt-5 sm:mt-10">
+                  <p class="common-paragraph-2 font-[600]">Mike Taylor</p>
+                  <p class="common-paragraph text-[14px] mt-1">
+                    Lahore, Pakistan
+                  </p>
+                </div>
+
+                <div class="testimonial-profile-img">
+                  <img
+                    src="./imgs/Testimonials/Image.svg"
+                    alt="Testimonials Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <button id="nextButton" class="testimonial-next-btn">
+              <img
+                src="./imgs/Testimonials/Vector 3.svg"
+                alt="Arrow"
+                class="rotate-180"
+              />
+            </button>
+            <button id="prevButton" class="testimonial-prev-btn">
+              <img src="./imgs/Testimonials/Vector 3.svg" alt="Arrow" />
+            </button>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
 
-    <section class="companies my-10">
+    <section class="companies my-24">
       <div class="container element-center gap-14 flex-wrap">
         <div class="h-[120px] element-center">
           <img
@@ -549,7 +566,7 @@
       </div>
     </section>
 
-    <section class="subscribe relative my-32">
+    <section class="subscribe relative my-24">
       <div class="container z-[5]">
         <div class="relative">
           <div class="subscribe-content">
@@ -671,7 +688,9 @@
 
             <p class="common-paragraph mt-7 text-[20px]">Discover our app</p>
 
-            <div class="flex gap-3 mt-3">
+            <div
+              class="flex flex-nowrap xl:flex-wrap 2xl:flex-nowrap gap-3 mt-3"
+            >
               <img src="./imgs/Footer/Google Play.svg" alt="Google Play Icon" />
               <img src="./imgs/Footer/Play Store.svg" alt="App Store Icon" />
             </div>
